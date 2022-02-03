@@ -28,9 +28,15 @@ public class Temperature {
                 }
                     
             }
+            for (int i : rangeTemp){
+                if (i > tempMax){
+                    tempMax = i;
+                }
+            }
             double avg = calcTotal/14;
             System.out.println("\n---------------------------------------------");
             System.out.println("The average temperature is "+avg+" degrees");
+            System.out.println("Maximum Value is: "+tempMax);
             
         }
         
